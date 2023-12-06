@@ -7,6 +7,7 @@ $('#projectsContent').hide();
 $('#tutorialsContent').hide();
 $('#academicContent').hide();
 $('#particularContent').hide();
+$('#ideasContent').hide();
 /* Template
 $('#nameContent').hide();
 */
@@ -260,12 +261,6 @@ $(document).ready(function(){
 		toastr.success('Citation copied');
 	});
 
-	// Controls the URL; if it has '#blog'
-	// then trigger the 'Blog' clic
-	// if (((window.location).href).substring(((window.location).href).lastIndexOf('#') + 1) == 'tutorials') {
-	// 	$('#tutorials').click();
-	// 	$('#tutorialsContent').focus();
-	// }
 
 	if (((window.location).href).substring(((window.location).href).lastIndexOf('#') + 1) == 'clases-particulares') {
 		$('#particular').click();
