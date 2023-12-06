@@ -114,7 +114,7 @@ $(document).ready(function(){
 	});
 
 	// Handle 'Blog' content
-	$('#tutorials').click(function(e) {
+	$('#ideas').click(function(e) {
 
 		// If the div has already the class active, no need to reload the divs...
 		if(!$(e.target).hasClass('active')) {
@@ -126,7 +126,7 @@ $(document).ready(function(){
 			clearActiveDivs();
 
 			// Show current content
-			activateDiv('#tutorialsContent');
+			activateDiv('#ideasContent');
 		}
 	});
 
