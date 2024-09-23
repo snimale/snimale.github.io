@@ -6,7 +6,7 @@ $('#conferencesContent').hide();
 $('#projectsContent').hide();
 $('#tutorialsContent').hide();
 $('#academicContent').hide();
-// $('#particularContent').hide();
+//$('#particularContent').hide();
 $('#ideasContent').hide();
 /* Template
 $('#nameContent').hide();
