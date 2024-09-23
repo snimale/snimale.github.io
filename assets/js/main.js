@@ -6,17 +6,13 @@ $('#conferencesContent').hide();
 $('#projectsContent').hide();
 $('#tutorialsContent').hide();
 $('#academicContent').hide();
-$('#particularContent').hide();
+// $('#particularContent').hide();
 $('#ideasContent').hide();
 /* Template
 $('#nameContent').hide();
 */
 $('#theme').hide();
 $('#lan').hide();
-
-// Hides all the divs in the particular, unless the first one
-$('.particular-clickable').next().hide();
-$('.particular-clickable').next()[0].style.display="block";
 
 $(document).ready(function(){
 
@@ -149,21 +145,21 @@ $(document).ready(function(){
 	});
 
 	// Handle 'Particular' content
-	$('#particular').click(function(e) {
+	// $('#particular').click(function(e) {
 
-		// If the div has already the class active, no need to reload the divs...
-		if(!$(e.target).hasClass('active')) {
-			// Update navbar
-			clearActiveLinks();
-			activateLink(e);
+	// 	// If the div has already the class active, no need to reload the divs...
+	// 	if(!$(e.target).hasClass('active')) {
+	// 		// Update navbar
+	// 		clearActiveLinks();
+	// 		activateLink(e);
 
-			// Hide other contents
-			clearActiveDivs();
+	// 		// Hide other contents
+	// 		clearActiveDivs();
 
-			// Show current content
-			activateDiv('#particularContent');
-		}
-	});
+	// 		// Show current content
+	// 		activateDiv('#particularContent');
+	// 	}
+	// });
 
 	// Handle 'Conferences' content
 	// $('#conferences').click(function(e) {
@@ -236,20 +232,20 @@ $(document).ready(function(){
 	*/
 
 	// Whenever you clic on a blog post, you should be redirected to that post' html
-	$('.clickable').click(function(e) {
-		window.open($(e.currentTarget)[0].childNodes[1].innerText, '_blank').focus();
-	});
+	// $('.clickable').click(function(e) {
+	// 	window.open($(e.currentTarget)[0].childNodes[1].innerText, '_blank').focus();
+	// });
 
-	// Whenever you clic on a clases particulares heading, you should toggle
-	$('.particular-clickable').click(function(e) {
-		var e = $(e.currentTarget)[0].nextElementSibling;
-		if (e.style.display === "none") {
-			e.style.display = "block";
-		}
-		else {
-			e.style.display = "none";
-		}
-	});
+	// // Whenever you clic on a clases particulares heading, you should toggle
+	// $('.particular-clickable').click(function(e) {
+	// 	var e = $(e.currentTarget)[0].nextElementSibling;
+	// 	if (e.style.display === "none") {
+	// 		e.style.display = "block";
+	// 	}
+	// 	else {
+	// 		e.style.display = "none";
+	// 	}
+	// });
 
 	// Copy the citation to the clipboard
 	// THIS SHOULD BE THE SAME FOR ALL THE PAPERS
@@ -262,10 +258,10 @@ $(document).ready(function(){
 	});
 
 
-	if (((window.location).href).substring(((window.location).href).lastIndexOf('#') + 1) == 'clases-particulares') {
-		$('#particular').click();
-		$('#particularContent').focus();
-	}
+	// if (((window.location).href).substring(((window.location).href).lastIndexOf('#') + 1) == 'clases-particulares') {
+	// 	$('#particular').click();
+	// 	$('#particularContent').focus();
+	// }
 
 	// Controls the options menu
 	$('#options-toggler').click(function(e) {
