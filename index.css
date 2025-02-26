@@ -169,7 +169,9 @@ a:active {
 }
 
 .box-img-content {
-  height: 50%;
+  width: 100%;
+  max-height: 50%;
+  object-fit: cover;
 }
 
 .Projects-Summary {
@@ -262,4 +264,21 @@ table.Academics-Table th {
   padding-right: 0rem;
   text-align: center;
   font-size: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .Background-0 {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .Projects-List {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .box {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
 }
