@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color-0: #121212;
+  --background-color-1: #282828;
+  --background-color-2: #3f3f3f;
+
+  --text-color-0: #ffffff;
+  --highlight-color-0: #ff7c59;
+  --highlight-color-1: #ff4323;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul {
+  color: var(--text-color-0);
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  margin: 0px;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+p {
+  margin: 0px;
+  padding: 1rem;
+  text-align: left;
+}
+
+article {
+  border-bottom: 10px var(--highlight-color-0) solid;
+  border-left: 10px var(--highlight-color-0) solid;
+  border-right: 10px var(--highlight-color-0) solid;
+}
+
+hr {
+  border: 3px solid var(--highlight-color-0);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+  color: var(--highlight-color-0);
+}
+
+/* visited link */
+a:visited {
+  color: var(--highlight-color-1);
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
+.Background-0 {
+  background-color: var(--background-color-0);
+  padding: 5% 10%;
+}
+
+#Skills {
+  color: #ffffff;
+}
+
+.Skills-List {
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.Profile {
+  width: 100%;
+  box-sizing: border-box;
+  height: fit-content;
+  background-color: (--background-color-1);
+  border: 10px solid var(--highlight-color-0);
+  overflow: hidden;
+}
+
+#Profile-Text {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.Profile-Title {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
+}
+
+.Profile-Name {
+  font-size: 5rem;
+}
+
+.Profile-Name-Mr {
+  font-size: 3rem;
+}
+
+.Profile-Links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  font-size: 1rem;
+  height: 2rem;
+}
+
+.Profile-Link {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.Projects-Title {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+.Projects-List {
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100%;
+  /* width: 100%; */
+}
+
+.box {
+  margin: 2rem;
+  border-radius: 20px;
+  background-color: var(--background-color-1);
+  width: 100%;
+  max-width: 300px;
+  height: 600px;
+  overflow: hidden;
+  border: var(--background-color-2) 2px solid;
+  box-shadow: var(--text-color-0) -2px 2px 3px;
+}
+
+.box-text-content {
+  height: 50%;
+}
+
+.box-img-content {
+  height: 50%;
+}
+
+.Projects-Summary {
+  color: var(--text-color-0);
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.Projects-Summary::after {
+  content: "Click to view more...";
+}
+
+details[open] .Projects-Summary::after {
+  content: "Click to view less...";
+}
+
+.Academics-Title {
+  font-size: 3rem;
+  text-align: center;
+  padding: 0rem;
+  padding-top: 2rem;
+}
+
+.Academics-Type {
+  text-align: center;
+}
+
+.Academics-Content {
+  padding: 2rem;
+  padding-left: 3rem;
+}
+
+.Academics-Pad {
+  padding: 2rem;
+}
+
+.Academics-Table {
+  width: 100%; /* Set the table width to 100% to make it broader */
+  max-width: 600px;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  margin: 2rem auto;
+  margin-bottom: 2rem;
+}
+
+table.Academics-Table th,
+table.Academics-Table td {
+  border: 1px solid var(--background-color-2);
+  padding: 12px;
+  text-align: center;
+}
+
+table.Academics-Table th {
+  background-color: var(--background-color-1);
+}
+
+.Academics-Table row {
+  margin-bottom: 1rem;
+}
+
+.hobbies-title {
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.hobbies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem 0rem;
+}
+
+.hobby-item {
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--background-color-1);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: var(--background-color-2) solid 2px;
+  box-shadow: #ffffff -2px 2px 3px;
+  margin: 0.5rem;
+}
+
+.Research-Title {
+  padding-left: 0rem;
+  padding-right: 0rem;
+  text-align: center;
+  font-size: 3rem;
+}
