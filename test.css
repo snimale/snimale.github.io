@@ -1,0 +1,7 @@
+.Profile {
+  width: 100%;
+  height: fit-content;
+  border-collapse: collapse;
+  background-color: red;
+  overflow: hidden;
+}
