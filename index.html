@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/6181efbe1b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="Background-0">
+    <header>
+      <div class="navbar sticky">
+        <div class="navbar-title"><b>Portfolio</b></div>
+
+        <!-- Hamburger icon for mobile -->
+        <div class="navbar-toggle" id="navbar-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="navbar-ul" id="navbar-menu">
+          <li class="navbar-li">
+            <a href="#" class="navbar-a">Home</a>
+          </li>
+
+          <div class="navbar-li-seperator">|</div>
+          <li class="navbar-li">
+            <a href="#Projects" class="navbar-a">Projects</a>
+          </li>
+          <div class="navbar-li-seperator">|</div>
+          <li class="navbar-li">
+            <a href="#Publication" class="navbar-a">Publication</a>
+          </li>
+          <div class="navbar-li-seperator">|</div>
+          <li class="navbar-li">
+            <a href="#Academics" class="navbar-a">Academics</a>
+          </li>
+          <div class="navbar-li-seperator">|</div>
+          <li class="navbar-li">
+            <a href="#Contact" class="navbar-a">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="Profile">
+        <div class="Profile-Photo">
+          <img
+            src="imgs/profile/soham_nimale.JPG"
+            alt="Soham Nimale Profile Photo"
+            height="200px"
+          />
+        </div>
+        <div id="Profile-Text">
+          <h1 class="Profile-Title Profile-Name">Soham Nimale</h1>
+        </div>
+        <div>
+          <div>
+            <div id="Profile-Description" class="Profile-Links">
+              <a
+                href="https://www.linkedin.com/in/soham-nimale-500692257/"
+                target="_blank"
+                class="Profile-Link"
+                >LinkedIn</a
+              >
+              <a
+                href="https://github.com/snimale"
+                target="_blank"
+                class="Profile-Link"
+                >GitHub</a
+              >
+              <a
+                href="https://scholar.google.com/citations?user=snVxGTQAAAAJ&hl=en&authuser=1"
+                target="_blank"
+                class="Profile-Link"
+                >Scholar</a
+              >
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="Profile-Aboutme">
+            I am 20 year old student who likes problem solving and working on
+            challenging tasks. Currently, I am a final-year B.Tech (Computer
+            Engineering) student at Vishwakarma Institute of Technology, Pune.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <article id="CV">
+      <div class="section-end"></div>
+      <hr />
+
+      <section id="Projects">
+        <h2 class="Projects-Title">Projects</h2>
+        <div class="Projects-List">
+          <div class="box">
+            <img
+              class="box-img-content"
+              src="imgs/projects/multi_path_ray_tracing.png"
+              alt=""
+              height="100%"
+            />
+
+            <div class="box-text-content">
+              <h2>Ray Tracer in CUDA (Multi-Reflection)</h2>
+              <p>
+                Optimized backward ray and material property calculations
+                through parallel processing. Studied GPU architectures, CUDA,
+                thread organization and distribution, 3D geometry, and others.
+              </p>
+              <div class="icons-list">
+                <a
+                  href="https://docs.google.com/document/d/1U68yteTJ2g_P2prhT_VdQYFHhngRez-YxE7RZST72_E/edit?usp=sharing"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-solid fa-file fa-2xl icon"
+                    title="Google Docs"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <img
+              class="box-img-content"
+              src="imgs/projects/marathi_gan.png"
+              alt=""
+              height="100%"
+            />
+            <div class="box-text-content">
+              <h2>Devanagari Digits Dataset: GAN & CGAN</h2>
+              <p>
+                Won the Impetus 2024, PICT, Pune (Machine Learning) - a group
+                project. Includes app for digital data creation, data
+                processing, synthetic data generation (GAN/CGAN), AI vs Human
+                game for quality validation, and multiple proof of concept apps.
+              </p>
+            </div>
+          </div>
+
+          <div class="box">
+            <img
+              class="box-img-content"
+              src="imgs/projects/color_dash.jpg"
+              alt=""
+              height="100%"
+            />
+            <div class="box-text-content">
+              <h2>Color Dash : Obstacle Racing</h2>
+              <p>
+                Published on Goodle Play Store: a casual racing game developed
+                using C# and Unity. Implemented dynamic level generation using
+                Pixel-Mapping algorithm. Features include: menus, ads, music, 3D
+                physics, touch/scroll input, and version control.
+              </p>
+              <div class="icons-list">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.sleepwalkergames.colordash&pcampaignid=web_share"
+                  target="_blank"
+                >
+                  <i
+                    class="fa-brands fa-google-play fa-2xl icon"
+                    title="Google Play Store"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <details>
+          <summary class="Projects-Summary"></summary>
+          <div class="Projects-List">
+            <div class="box">
+              <img
+                class="box-img-content"
+                src="imgs/projects/EDAI2.png"
+                alt=""
+                height="100%"
+              />
+              <div class="box-text-content">
+                <h2>Method for Image Encryption-Decryption</h2>
+                <p>
+                  Developed an Encryption-Decryption system with the integration
+                  of Steganography, Optical, and RSA Encryption methods. Studied
+                  Cyber Security, modular mathematics, Python, and others.
+                </p>
+                <div class="icons-list">
+                  <a
+                    href="https://ieeexplore.ieee.org/abstract/document/10346955"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-solid fa-file fa-2xl icon"
+                      title="Research Paper"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <img
+                class="box-img-content"
+                src="imgs/projects/knn_sampler.png"
+                alt=""
+                height="100%"
+              />
+              <div class="box-text-content">
+                <h2>KNNSampler Package</h2>
+                <p>
+                  Developed and deployed a sampling algorithm package on
+                  K-nearest-neighbors algorithm using Python. Optimized and
+                  corrected the original algorithm to help visualize bulky data
+                  (multi-dimensional). Studied graphs, machine-learning, object
+                  oriented programming (Python).
+                </p>
+                <div class="icons-list">
+                  <a
+                    href="https://pypi.org/project/KNearestNeighborSampling/"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-python fa-2xl icon"
+                      title="Deployed Package"
+                    ></i>
+                  </a>
+                  <a href="https://youtu.be/sLWVi3Oe8gk" target="_blank">
+                    <i
+                      class="fa-brands fa-youtube fa-2xl icon"
+                      title="Youtube Video"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <img
+                class="box-img-content"
+                src="imgs/projects/MOSS.png"
+                alt=""
+                height="100%"
+              />
+              <div class="box-text-content">
+                <h2>Operating System Simulator</h2>
+                <p>
+                  MOSS: Multi-programming Operating System Simulator. Developed
+                  using C# and Unity. Features include paging, page fault, I/O,
+                  script writing, virtual memory, and error handling. Visualized
+                  page table, memory, CPU, and kernel.
+                </p>
+                <div class="icons-list">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.SleepWalker.MOSS&pcampaignid=web_share"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-google-play fa-2xl icon"
+                      title="Google Play Store"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://youtu.be/MCn9I40WuXM?feature=shared"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-youtube fa-2xl icon"
+                      title="Youtube Video"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <img
+                class="box-img-content"
+                src="imgs/projects/multi_stage_gale_shapely.png"
+                alt=""
+                height="100%"
+              />
+              <div class="box-text-content">
+                <h2>Multi-Staged Gale & Shapely</h2>
+                <p>
+                  90 Proposal & implementation of Multi-Staged Gale & Shapely
+                  algorithm for guide and group matching. Both side preferences
+                  are considered and a complete & stable matching is obtained. A
+                  group project under Prof. Dr. Girija Limaye.
+                </p>
+                <div class="icons-list">
+                  <a
+                    href="https://drive.google.com/file/d/1TzCVjUrUFJVqm0xVNTjVY8NywRDxPSGc/view?usp=sharing"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-youtube fa-2xl icon"
+                      title="Video Demonstration"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <img
+                class="box-img-content"
+                src="imgs/projects/toon_blash.png"
+                alt=""
+                height="100%"
+              />
+              <div class="box-text-content">
+                <h2>Open-Source Casual Games</h2>
+                <p>
+                  Developed using C# and Unity 2D/3D. Ad timers and smart
+                  advertisement are added to open-source games to make them
+                  compatible with current fast paced industry ad campaigns on
+                  social media, which tend to have time limit.
+                </p>
+                <div class="icons-list">
+                  <a
+                    href="https://github.com/snimale/TOON-BLAST-clone"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-github fa-2xl icon"
+                      title="GitHub"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://github.com/snimale/amaze-clone"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-github fa-2xl icon"
+                      title="GitHub"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://youtu.be/WAikoB4lQKE?feature=shared"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-youtube fa-2xl icon"
+                      title="Youtube Video"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <img
+                class="box-img-content"
+                src="imgs/projects/Digital_Twin.png"
+                alt=""
+                height="100%"
+              />
+              <div class="box-text-content">
+                <h2>Digital Twin: Windmill</h2>
+                <p>
+                  Built Graphics-File (.obj file) parser in C from scratch.
+                  Built a soft real-time simulated windmill scene using OpenGL
+                  in C from scratch. studied and applied concepts like camera
+                  models, lighting, transformations, geometrical models,
+                  frame-rate, and others. A group project.
+                </p>
+                <div class="icons-list">
+                  <a
+                    href="https://github.com/snimale/Windmill_OpenGL"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-github fa-2xl icon"
+                      title="GitHub"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://youtu.be/geABRkp38ug?feature=shared"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-youtube fa-2xl icon"
+                      title="Youtube Video"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <img
+                class="box-img-content"
+                src="imgs/projects/3D_Platformer_Shooter.png"
+                alt=""
+                height="100%"
+              />
+              <div class="box-text-content">
+                <h2>3D Platformer Shooter</h2>
+                <p>
+                  Developed using C# and Unity 3D to learn platformer & shooter
+                  games. Key features include: ray casting based shooting
+                  mechanism, custom enemy spawner prefab, custom camera to
+                  follow the player, behaviour based character animator, health
+                  bar, and multiple menus.
+                </p>
+                <div class="icons-list">
+                  <a
+                    href="https://github.com/snimale/3D-Platformer-Shooter-Base"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-github fa-2xl icon"
+                      title="GitHub"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://youtu.be/9tP7Te8aaTY?feature=shared"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-youtube fa-2xl icon"
+                      title="Youtube Video"
+                    ></i
+                  ></a>
+                  <a
+                    href="https://drive.google.com/file/d/1XVObMNmEXaFXWK6AaHlaM2HGULymY1q6/view?usp=drive_link"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-youtube fa-2xl icon"
+                      title="Video Demonstration"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <img
+                class="box-img-content"
+                src="imgs/projects/server_log_management.png"
+                alt=""
+                height="100%"
+              />
+              <div class="box-text-content">
+                <h2>Server Log Management</h2>
+                <p>
+                  A MySQL server log management system. Developed backend API
+                  using Flask Framework & SQLAlchemy (Python) and frontend
+                  application using Unity.Applied Foreign Keys, Primary Keys,
+                  Stored Procedures, Triggers, and Functions
+                </p>
+              </div>
+            </div>
+
+            <div class="box">
+              <img
+                class="box-img-content"
+                src="imgs/projects/maintenance_prediction.png"
+                alt=""
+                height="100%"
+              />
+              <div class="box-text-content">
+                <h2>Vehicle Maintenance Prediction</h2>
+                <p>
+                  Designed a data cleaning pipeline for the Engine Health
+                  Dataset in R, resulting in the best accuracy on Kaggle for the
+                  dataset. Integrated with shine UI in R. Created a smart data
+                  cleaning pipeline. A group project.
+                </p>
+                <div class="icons-list">
+                  <a
+                    href="https://github.com/snimale/Vehicle-Maintenance-Prediction/tree/master"
+                    target="_blank"
+                  >
+                    <i
+                      class="fa-brands fa-github fa-2xl icon"
+                      title="GitHub"
+                    ></i>
+                  </a>
+                  <a
+                    href="https://drive.google.com/file/d/1ndqBiVRAbR_hiT8hgyF33FiUln1hHIir/view?usp=sharing"
+                    target="_blank"
+                    ><i
+                      class="fa-brands fa-youtube fa-2xl icon"
+                      title="Video Demonstration"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <img
+                class="box-img-content"
+                src="imgs/projects/income_prediction_using_knn.png"
+                alt=""
+                height="100%"
+              />
+              <div class="box-text-content">
+                <h2>KNN in Assembly Language (x86-64)</h2>
+                <p>
+                  Assembly language implementation of KNN Algorithm. Includes
+                  dynamic size CSV Data parsing, KNN calculations, and write
+                  back in CSV, all done in ASM. Tested for Income Prediction
+                  task for 2-class classification. A group project.
+                </p>
+              </div>
+            </div>
+
+            <div class="box">
+              <img
+                class="box-img-content"
+                src="imgs/projects/PSAP2.jpg"
+                alt=""
+                height="100%"
+              />
+              <div class="box-text-content">
+                <h2>The Rotating Donut Problem</h2>
+                <p>
+                  Solved the Rotating Donut problem from scratch using
+                  Graphics.h header file in C programming. Implemented light
+                  calculations, optimized matrix calculations for position and
+                  orientation calculation (traisformation matrices).
+                </p>
+              </div>
+            </div>
+          </div>
+        </details>
+        <hr />
+      </section>
+
+      <section id="Publication">
+        <h2 class="Research-Title">Publication</h2>
+        <div class="Research-List">
+          <div class="box research-box">
+            <h2 class="research-box-title">
+              Systems and Methods for Image Encryption Using Steganography and
+              XOR Operations
+            </h2>
+            <p>
+              Scopus indexed publication DOI: 10.1109/ICCCMLA58983.2023.10346955
+              Conference: International Conference on Cybernetics, Cognition,
+              and Machine Learning Applications (ICCCMLA), Germany.
+            </p>
+            <div class="research-certificate">
+              <a target="_blank" href="certificates/ICCCMLA_Certificate.png">
+                Certificate
+              </a>
+            </div>
+          </div>
+
+          <div class="box research-box">
+            <h2 class="research-box-title">
+              Exploring Predictive Maintenance and Signal Processing Techniques
+              for Automotive Health Monitoring
+            </h2>
+            <p>
+              Scopus indexed publication DOI: 10.1109/ICOECA62351.2024.00100
+              Conference: International Conference on Expert Clouds and
+              Applications (ICOECA).
+            </p>
+            <div class="research-certificate">
+              <a target="_blank" href="certificates/ICOECA_Certificate.pdf">
+                Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <details>
+          <summary class="Projects-Summary"></summary>
+          <div class="Research-List">
+            <div class="box research-box">
+              <h2 class="research-box-title">
+                Predictive Maintenance for Automotive Health using Machine
+                Learning
+              </h2>
+              <p>
+                Conference: 3rd International Conference on Advances in
+                Data-driven Computing and Intelligent Systems (ADCIS 2024).
+                Status: Waiting for publication
+              </p>
+            </div>
+
+            <div class="box research-box">
+              <h2 class="research-box-title">
+                Sentiment Analysis of Marathi Texts using Deep Learning Models
+              </h2>
+              <p>
+                Published research paper DOI: 10.1007/978-981-97-5703-9_57
+                Conference: International Conference on Emerging Trends and
+                Technologies on Intelligent Systems (ETTIS-2024).
+              </p>
+              <div class="research-certificate">
+                <a target="_blank" href="certificates/ETTIS_Certificate.pdf">
+                  Certificate
+                </a>
+              </div>
+            </div>
+
+            <div class="box research-box">
+              <h2 class="research-box-title">
+                Parallel Computation & Visualization of Ray Tracing with
+                Multiple Reflections
+              </h2>
+              <p>
+                A research project under the guidance of Prof. (smt.) Sangita
+                Lade. Developed a ray tracer and renderer (using Phong Model) in
+                CUDA for multiple reflection and material property calculations
+                using parallel-processing and multi-threading.
+              </p>
+            </div>
+
+            <div class="box research-box">
+              <h2 class="research-box-title">
+                Optimization of KNN Sampling based Large Data Visualization
+                Using Dimension Reduction Algorithms
+              </h2>
+              <p>
+                Independent Research, Optimizations were made in the Base paper
+                : k-NN Sampling for Visualization of Dynamic Data Using
+                LION-tSNE (DOI: 10.1109/HiPC.2019.00019) (Status : Python
+                Package Published)
+              </p>
+            </div>
+
+            <div class="box research-box">
+              <h2 class="research-box-title">
+                Systems And Methods to Implement Smart Roof, Conference
+              </h2>
+              <p>
+                Paper presentation in the International Conference on Innovative
+                Research in Science and Technology (IRST), organized by Shobhit
+                Institute of Engineering and Technology, Meerut in association
+                with STEM Research Society.
+              </p>
+              <div class="research-certificate">
+                <a target="_blank" href="certificates/IRST_Certificate.jpg">
+                  Certificate
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+        <hr />
+      </section>
+
+      <section id="Academics">
+        <div>
+          <h2 class="Academics-Title">Academics</h2>
+
+          <ul class="Academics-Pad">
+            <li>
+              <h2 class="Academics-Type">
+                B.Tech Undergraduate Student in Computer Engineering
+              </h2>
+              <div class="Academics-Center">
+                <table class="Academics-Table">
+                  <tr>
+                    <th width="25%">Batch</th>
+                    <th width="50%">Year</th>
+                    <th width="25%">CGPA</th>
+                  </tr>
+
+                  <tr>
+                    <td>2024-25</td>
+                    <td>Third-Year</td>
+                    <td>9.60</td>
+                  </tr>
+
+                  <tr>
+                    <td>2023-24</td>
+                    <td>Second-Year</td>
+                    <td>9.61</td>
+                  </tr>
+
+                  <tr>
+                    <td>2022-23</td>
+                    <td>First-Year</td>
+                    <td>9.65</td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+
+            <li>
+              <h2 class="Academics-Type">
+                Secondary & Senior-Secondary Education
+              </h2>
+              <table class="Academics-Table">
+                <tr>
+                  <th width="25%">Year</th>
+                  <th width="50%">Standard</th>
+                  <th width="25%">Score</th>
+                </tr>
+
+                <tr>
+                  <td>2021-22</td>
+                  <td>12th</td>
+                  <td>94.4%</td>
+                </tr>
+
+                <tr>
+                  <td>2019-20</td>
+                  <td>10th</td>
+                  <td>96.8%</td>
+                </tr>
+              </table>
+            </li>
+          </ul>
+
+          <hr />
+        </div>
+      </section>
+
+      <section id="Hobbies">
+        <h2 class="hobbies-title">Hobbies</h2>
+        <p class="hobbies-list">
+          <span class="hobby-item">Tabla</span>
+          <span class="hobby-item">Badminton</span>
+          <span class="hobby-item">Gaming</span>
+        </p>
+      </section>
+
+      <section id="Contact">
+        <div>
+          <h2 class="Contact-title">Contact</h2>
+          <ul class="Contact-list">
+            <li>{first-name}.{last-name}22@vit.edu</li>
+            <li class="Contact-list-li">
+              {first-name}.sachin.{last-name}@gmail.com
+            </li>
+          </ul>
+        </div>
+        <hr />
+      </section>
+    </article>
+
+    <footer style="color: white; text-align: center; padding: 1rem">
+      SOHAM NIMALE CV &copy;
+    </footer>
+
+    <script>
+      document
+        .getElementById("navbar-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("navbar-menu").classList.toggle("show");
+        });
+    </script>
+  </body>
+</html>
